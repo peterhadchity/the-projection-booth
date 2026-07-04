@@ -28,7 +28,7 @@ Endpoints used:
 | `/movie/{id}?append_to_response=credits` | Full details + director for the modal |
 | `image.tmdb.org/t/p/...` | Poster images |
 
-### 🔑 Getting a free API key (required before running)
+###  Getting a free API key (required before running)
 
 1. Create a free account: **https://www.themoviedb.org/signup**
 2. Request a key (choose *Developer*, approval is instant): **https://www.themoviedb.org/settings/api**
@@ -55,14 +55,14 @@ The Projection Booth is a 3-page film site styled after a mid-century cinema boo
 
 ### Tech compliance checklist
 
-- ✅ Semantic HTML5 (`header`, `nav`, `main`, `section`, `article`, `footer`)
-- ✅ Hand-written CSS3 (custom properties, grid, animations) + **Flexbox** throughout
-- ✅ **Bootstrap 5** (navbar + collapse, grid container)
-- ✅ Responsive (mobile → desktop; tested at 375 / 768 / 1440 px)
-- ✅ **All JavaScript in ES6 classes** — `AppConfig`, `FilmCollection`, `DetailModal`, `TmdbService`, `HomePage`, `ExplorePage`, `App`. No jQuery.
-- ✅ Min. 3 pages with a consistent navbar, anchor-based routing
-- ✅ Key-based public API with search + filter + pagination and full state handling
-- ✅ 16 items of real curated content (`js/data.js`)
+-  Semantic HTML5 (`header`, `nav`, `main`, `section`, `article`, `footer`)
+-  Hand-written CSS3 (custom properties, grid, animations) + **Flexbox** throughout
+-  **Bootstrap 5** (navbar + collapse, grid container)
+-  Responsive (mobile → desktop; tested at 375 / 768 / 1440 px)
+-  **All JavaScript in ES6 classes** — `AppConfig`, `FilmCollection`, `DetailModal`, `TmdbService`, `HomePage`, `ExplorePage`, `App`. No jQuery.
+-  Min. 3 pages with a consistent navbar, anchor-based routing
+-  Key-based public API with search + filter + pagination and full state handling
+-  16 items of real curated content (`js/data.js`)
 
 ## 4. Custom UI Requirement — Modal popup for a detailed item view
 
@@ -98,7 +98,7 @@ Screenshots at mobile / tablet / desktop widths are in **`/evidence`**. *(Take t
 
 ## 8. AI-Use Appendix
 
-> ⚠️ Fill this in **honestly and specifically** — it is graded, and it must match the code and commit history.
+>  Fill this in **honestly and specifically** — it is graded, and it must match the code and commit history.
 
 **Tools used:**
 - **Claude (Anthropic)** — used for: `<e.g., generating the initial project scaffold (HTML structure, CSS theme, ES6 class architecture), which I then reviewed, tested, and modified>`
