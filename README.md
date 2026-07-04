@@ -1,4 +1,4 @@
-# The Projection Booth 🎞️
+# The Projection Booth 
 
 A film-discovery website built for the **Full Stack Development — Final Project 2026** (Lebanese University, Faculty of Engineering, Branch 2 – Roumieh).
 
@@ -8,7 +8,7 @@ A film-discovery website built for the **Full Stack Development — Final Projec
 
 ## 1. Author
 
-**Name:** `<YOUR FULL NAME>`
+**Name:** `<HADCHITY Peter>`
 **Section / ID:** `<...>`
 
 ## 2. API Used
