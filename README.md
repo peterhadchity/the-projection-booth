@@ -43,7 +43,7 @@ static get TMDB_API_KEY() {
 
 Alternative free key-based APIs if TMDB is unavailable in your region: [OMDb](https://www.omdbapi.com/apikey.aspx), [API Ninjas](https://api-ninjas.com/), [Pexels](https://www.pexels.com/api/), [Unsplash](https://unsplash.com/developers).
 
-> Note: the key is client-side by design (course scope — static front-end deployment). TMDB v3 keys are rate-limited and safe for demo projects, but would be proxied through a backend in production.
+
 
 ## 3. Project Description
 
@@ -93,25 +93,24 @@ Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 3. Verify the live URL loads with **no console errors** and works on a phone.
 
 ## 7. Evidence
+<img width="1885" height="872" alt="image" src="https://github.com/user-attachments/assets/c067869c-e348-4099-a943-33c93321d5d8" />
 
-Screenshots at mobile / tablet / desktop widths are in **`/evidence`**. *(Take these from the deployed site: 375px, 768px, 1440px.)*
+
 
 ## 8. AI-Use Appendix
 
->  Fill this in **honestly and specifically** — it is graded, and it must match the code and commit history.
-
 **Tools used:**
-- **Claude (Anthropic)** — used for: `<e.g., generating the initial project scaffold (HTML structure, CSS theme, ES6 class architecture), which I then reviewed, tested, and modified>`
-- `<any other tools, e.g., ChatGPT, Copilot — and what for>`
+- **Claude (Anthropic)** used for: ` generating the initial project scaffold (HTML structure, CSS theme, ES6 class architecture), which I then reviewed, tested, and modified>`
+- **ChatGPT** used for prompt advisor>`
 
 **Actual prompts used (2–3):**
 1. `"You are a senior software developer... The special task: Implement a modal popup for a detailed view of an item. An api key has to be inserted to grab pictures... Provide me with JS, CSS and HTML files necessary for an amazing project for a fullstack website. Also add a detailed read.me file"`
-2. `<second real prompt you used>`
-3. `<third real prompt you used>`
+2. `"Build a movie search page using TMDB API with search, genre filter, and pagination. Use ES6 JavaScript and make it responsive."`
+3. `"Create a custom modal in JavaScript that shows item details, closes on Escape or click outside, and prevents background scrolling."`
 
 **Things the AI got wrong / that didn't work, and how I found & fixed them (min. 2):**
-1. `<Describe a real issue you found while testing — e.g., a layout bug at a specific width, a broken state, an API edge case — how you noticed it (console, device testing), and the exact fix you made>`
-2. `<Second real issue and fix>`
+1. `<I had an issue where images were not loading correctly from the API. I fixed it by checking the image path and adding a fallback image when the poster was missing.`
+
 
 ## 9. Credits
 
