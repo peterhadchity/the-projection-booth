@@ -9,7 +9,9 @@ A film-discovery website built for the **Full Stack Development — Final Projec
 ## 1. Author
 
 **Name: HADCHITY Peter**
+
 **ID: 7451** 
+
 **Fourth Year-Electrical Engineering-Power&Automation**
 
 ## 2. API Used
