@@ -93,7 +93,10 @@ Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 3. Verify the live URL loads with **no console errors** and works on a phone.
 
 ## 7. Evidence
-<img width="1885" height="872" alt="image" src="https://github.com/user-attachments/assets/c067869c-e348-4099-a943-33c93321d5d8" />
+<img width="1915" height="967" alt="image" src="https://github.com/user-attachments/assets/57067f69-9a39-4847-ae62-ecef61b56cfb" />
+<img width="1080" height="2358" alt="WhatsApp Image 2026-07-04 at 8 52 41 PM" src="https://github.com/user-attachments/assets/67ee1142-5ca7-47b8-a5a2-3c30e1e988e5" />
+
+
 
 
 
