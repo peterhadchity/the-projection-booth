@@ -108,7 +108,7 @@ Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 2. `"Build a movie search page using TMDB API with search, genre filter, and pagination. Use ES6 JavaScript and make it responsive."`
 3. `"Create a custom modal in JavaScript that shows item details, closes on Escape or click outside, and prevents background scrolling."`
 
-**Things the AI got wrong / that didn't work, and how I found & fixed them (min. 2):**
+**Things the AI got wrong / that didn't work, and how I found & fixed them :**
 1. `I had an issue where images were not loading correctly from the API. I fixed it by checking the image path and adding a fallback image when the poster was missing.`
 
 
