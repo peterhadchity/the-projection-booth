@@ -2,7 +2,7 @@
 
 A film-discovery website built for the **Full Stack Development — Final Project 2026** (Lebanese University, Faculty of Engineering, Branch 2 – Roumieh).
 
-**Live URL:** `<paste your Vercel / Netlify / GitHub Pages URL here>`
+**Live URL:** https://peterhadchity.github.io/the-projection-booth/
 
 ---
 
@@ -83,7 +83,7 @@ npx serve .        # or: python3 -m http.server
 
 ## 6. Deployment
 
-Deployed on `<Vercel / Netlify / GitHub Pages>`. Steps used:
+Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 
 1. Push repo to GitHub (public).
 2. Import into Vercel/Netlify (framework preset: *Other*, no build command, output dir: `/`) — or enable GitHub Pages on the `main` branch root.
