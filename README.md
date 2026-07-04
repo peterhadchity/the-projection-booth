@@ -89,7 +89,7 @@ npx serve .        # or: python3 -m http.server
 Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 
 1. Push repo to GitHub (public).
-2. Import into Vercel/Netlify (framework preset: *Other*, no build command, output dir: `/`) — or enable GitHub Pages on the `main` branch root.
+2. Import into Vercel/Netlify  or enable GitHub Pages on the `main` branch root.
 3. Verify the live URL loads with **no console errors** and works on a phone.
 
 ## 7. Evidence
@@ -100,8 +100,8 @@ Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 ## 8. AI-Use Appendix
 
 **Tools used:**
-- **Claude (Anthropic)** used for: ` generating the initial project scaffold (HTML structure, CSS theme, ES6 class architecture), which I then reviewed, tested, and modified>`
-- **ChatGPT** used for prompt advisor>`
+- **Claude (Anthropic)** used for: ` generating the initial project scaffold (HTML structure, CSS theme, ES6 class architecture), which I then reviewed, tested, and modified`
+- **ChatGPT** used for prompt advisor`
 
 **Actual prompts used (2–3):**
 1. `"You are a senior software developer... The special task: Implement a modal popup for a detailed view of an item. An api key has to be inserted to grab pictures... Provide me with JS, CSS and HTML files necessary for an amazing project for a fullstack website. Also add a detailed read.me file"`
@@ -109,7 +109,7 @@ Deployed on **GitHub Pages** (deploy from branch: `main` / root). Steps used:
 3. `"Create a custom modal in JavaScript that shows item details, closes on Escape or click outside, and prevents background scrolling."`
 
 **Things the AI got wrong / that didn't work, and how I found & fixed them (min. 2):**
-1. `<I had an issue where images were not loading correctly from the API. I fixed it by checking the image path and adding a fallback image when the poster was missing.`
+1. `I had an issue where images were not loading correctly from the API. I fixed it by checking the image path and adding a fallback image when the poster was missing.`
 
 
 ## 9. Credits
