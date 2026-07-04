@@ -11,7 +11,7 @@
  */
 class AppConfig {
   static get TMDB_API_KEY() {
-    return "PASTE_YOUR_TMDB_API_KEY_HERE";
+    return "515c89ad79d0d53292be3b19895b2982";
   }
 
   static get TMDB_BASE_URL() {
