@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search and filter thousands of films live from the TMDB API.">
+  <title>The Projection Booth — Explore</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="explore">
+
+  <!-- ============ NAVBAR (consistent across all pages) ============ -->
+  <header>
+    <nav class="navbar navbar-expand-md pb-navbar" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand pb-brand" href="index.html">
+          <span class="pb-brand__reel" aria-hidden="true"></span>
+          The Projection Booth
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto pb-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="explore.html">Explore</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container explore">
+    <div class="explore__head">
+      <h1 class="section-title">Explore the Archive</h1>
+      <p class="section-lede">Live from The Movie Database. Search by title, filter by genre,
+        and page through the stacks. Click a poster for the lobby-card view.</p>
+    </div>
+
+    <!-- ============ SEARCH + FILTER CONTROLS ============ -->
+    <div class="explore__controls" role="search">
+      <div class="searchbox">
+        <label class="searchbox__label" for="searchInput">Search titles</label>
+        <input type="search" id="searchInput" class="searchbox__input"
+               placeholder="Try “Godard”, “heist”, “Studio Ghibli”…" autocomplete="off">
+      </div>
+      <div class="genrebox">
+        <label class="genrebox__label" for="genreSelect">Genre</label>
+        <select id="genreSelect" class="genrebox__select">
+          <option value="">All genres</option>
+        </select>
+      </div>
+      <button id="resetBtn" class="btn pb-btn pb-btn--ghost pb-btn--sm">Reset</button>
+    </div>
+
+    <!-- Status line: result counts / current mode -->
+    <p id="statusLine" class="explore__status" aria-live="polite"></p>
+
+    <!-- ============ STATES ============ -->
+    <!-- Loading state: skeleton cards -->
+    <div id="loadingState" class="results-grid" hidden></div>
+
+    <!-- Error state -->
+    <div id="errorState" class="state-panel" hidden>
+      <p class="state-panel__title">The reel snapped.</p>
+      <p id="errorMessage" class="state-panel__body"></p>
+      <button id="retryBtn" class="btn pb-btn pb-btn--gold pb-btn--sm">Try again</button>
+    </div>
+
+    <!-- Empty state -->
+    <div id="emptyState" class="state-panel" hidden>
+      <p class="state-panel__title">Nothing in the stacks.</p>
+      <p class="state-panel__body">No films matched that search. Try a shorter title or clear the genre filter.</p>
+    </div>
+
+    <!-- Results -->
+    <div id="resultsGrid" class="results-grid"></div>
+
+    <!-- ============ PAGINATION ============ -->
+    <nav id="pagination" class="pager" aria-label="Results pages" hidden>
+      <button id="prevBtn" class="pager__btn">‹ Prev</button>
+      <span id="pageInfo" class="pager__info"></span>
+      <button id="nextBtn" class="pager__btn">Next ›</button>
+    </nav>
+  </main>
+
+  <footer class="pb-footer">
+    <div class="container pb-footer__inner">
+      <p class="pb-footer__mark">The Projection Booth</p>
+      <p class="pb-footer__meta">Built for the Full Stack Development final project · Data on this
+        page courtesy of <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a>.
+        This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    </div>
+  </footer>
+
+  <!-- Modal root (custom UI requirement) -->
+  <div id="modalRoot"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
